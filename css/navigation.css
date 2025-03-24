@@ -1,0 +1,30 @@
+/* -- Select languages -- */
+.language-selector {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+}
+
+.language-selector label {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.language-dropdown {
+    border: none;
+    background: none;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+}
+
+.language-dropdown:focus {
+    border: none;
+    outline: none;
+}
