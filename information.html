@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Répertoire</title>
+    <link rel="stylesheet" href="../css/information.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="../picture/logo-transparent2.png" alt="Logo" class="logo">
+        <nav class="nav-menu">
+            <button data-url="accueil.html" class="accueil-button">ACCUEIL</button>
+            <button data-url="repertory.html" class="repertory-button">REPERTOIRE</button>
+        </nav>
+        <div class="language-selector">
+            <label for="lang">🌍</label>
+            <select id="lang" class="language-dropdown">
+                <option value="fr">Français</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+    </header>
+
+    <main>
+        <div class="argots-sentence">
+            <p class="title-argot">Proposition d'argot</p>
+            <input type="text" placeholder="Argots..." class="argots-bar">
+            <input type="text" placeholder="Traduction..." class="traduction-bar">
+            <input type="text" placeholder="Context" class="context-bar">
+            <button class="send-button">Envoyer</button>
+        </div>
+    </main>
+
+    <!-- Link JavaScript -->
+    <script src="../js/information.js"></script>
+</body>
+</html>
