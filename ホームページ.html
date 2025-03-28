@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ホームページ</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="../picture/logo-transparent2.png" alt="Logo" class="logo">
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="検索..." class="search-bar">
+            <button onclick="search()" id="search-button" class="search-button">🔍</button>
+        </div>
+        <div class="resultList-container">
+            <ul id="resultList" class="resultList"></ul>
+        </div>
+        <div class="language-selector">
+            <label for="lang">🌍</label>
+            <select id="lang" class="language-dropdown" onchange="changeLanguage()">
+                <option value="ホームページ.html">日本語</option>
+                <option value="homepage.html">英語</option>
+                <option value="index.html">フランス語</option>
+            </select>
+        </div>
+    </header>
+
+    <main>
+        <div class="paragraph-container-presentation">
+            <h2 class="paragraph-title-presentation">ようこそ、Teach me l'argot へ !</h2>
+            <p class="paragraph-content-presentation">
+                フランス語のスラングを理解して使いたいですか？このサイトはあなたのためのものです！レベルや実際の状況に合わせて、スラングの言葉や表現をわかりやすく案内します。初心者でも、すでにフランス語に慣れている人でも、簡単で実用的な方法でスラングを学べます。
+            </p>
+        </div>
+        <div class="paragraph-container-find-word" data-url="レパートリー.html">
+            <h2 class="paragraph-title-find-word">スラングを探す</h2>
+            <p class="paragraph-content-find-word">
+                xoxo
+            </p>
+        </div>
+        <div class="paragraph-container-for-more" data-url="情報.html">
+            <h2 class="paragraph-title-for-more">より多くの言葉のために...</h2>
+            <p class="paragraph-content-for-more">
+                xoxo
+            </p>
+        </div>
+    </main>
+
+    <!-- Link JavaScript -->
+    <script src="../js/script.js"></script>
+</body>
+</html>
