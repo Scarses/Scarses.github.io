@@ -16,7 +16,7 @@ document.addEventListener('click', (event) => {
 });
 
 // Handle search
-const files = ["list1.html", "list2.html", "list3.html", "list4.html", "list5.html", "list6.html"];
+const files = ["list1.html", "list2.html", "list3.html"];
 
 async function search() {
     let query = document.getElementById('search-bar').value.toLowerCase();

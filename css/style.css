@@ -64,13 +64,14 @@ main {
     gap: 5px;
     margin: 0;
     position: relative;
-    top: 480px;
-    left: -10px;
+    top: 740px;
+    left: -125px;
 }
 
 .paragraph-container-presentation,
-.paragraph-container-find-word,
-.paragraph-container-for-more {
+.paragraph-container-positive,
+.paragraph-container-neutral,
+.paragraph-container-negative {
     background: #f9f9f9;
     border-radius: 8px;
     border-left: 5px solid #884d11;
@@ -81,21 +82,23 @@ main {
 }
 
 .paragraph-title-presentation,
-.paragraph-title-find-word,
-.paragraph-title-for-more {
+.paragraph-container-positive,
+.paragraph-container-neutral,
+.paragraph-container-negative {
     color: #884d11;
     font-size: 20px;
     margin-bottom: 10px;
 }
 
 .paragraph-content-presentation,
-.paragraph-contentfind-word,
-.paragraph-content-for-more {
+.paragraph-container-positive,
+.paragraph-container-neutral,
+.paragraph-container-negative {
     color: #333;
     font-size: 16px;
     line-height: 1.6;
 }
 
-.paragraph-container-for-more {
+.paragraph-container-negative {
     margin-bottom: 100px;
 }
