@@ -2,15 +2,16 @@
 
 body {
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 0;
     margin: 0;
     background-color: #f4f4f4;
+    position: relative;
+    left: 520px;
+    max-width: 500px;
 }
 
 header {
+    max-width: 900px;
     position: absolute;
     top: 10px;
 }
@@ -19,26 +20,29 @@ li {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 .accueil-page {
     font-size: 20px;
     font-weight: 700;
-    text-align: center;
     text-decoration: none;
 }
 
 /* --- Style du logo --- */
 .logo {
-    width: 1200px;
+    width: 900px;
     height: 330px;
 }
 
 /* --- Bouton accueil --- */
 .nav-menu {
     background-color: #f4f4f4;
-    width: 14%;
+    width: 18%;
     padding: 1px;
     position: relative;
-    left: 44%;
+    left: 41%;
     border-radius: 25px;
 }
 
@@ -62,12 +66,14 @@ main {
     margin: 0;
     position: relative;
     top: 430px;
-    max-width: 1200px;
+    max-width: 900px;
 }
 
 /* --- Title main --- */
 #accueil-positif {
     color: #0f66be;
+    position: relative;
+    left: -18px;
 }
 
 #accueil-negatif {
@@ -84,7 +90,7 @@ main {
     justify-content: center;
     align-items: center;
     padding: 8px;
-    width: 1200px;
+    width: 900px;
     color: white;
     background-color: #0f66be;
 }
@@ -126,7 +132,7 @@ main {
     justify-content: center;
     align-items: center;
     padding: 8px;
-    width: 1200px;
+    width: 900px;
     color: white;
     background-color: #be0f0f;
 }
@@ -168,7 +174,7 @@ main {
     justify-content: center;
     align-items: center;
     padding: 8px;
-    width: 1200px;
+    width: 900px;
     color: white;
     background-color: #bebebe;
 }
