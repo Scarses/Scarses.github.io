@@ -4,36 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Répertoire</title>
+    <title>Positive Tone</title>
     <link rel="stylesheet" href="./css/repertory.css">
 </head>
 
 <body>
 
-    <header class="top-bar">
+    <header>
         <img src="./picture/logo-transparent2.png" alt="Logo" class="logo">
-        <nav class="nav-menu">
+        <nav class="nav-menu" id="nav-menu-positif">
             <ul>
-                <li><a href="#" data-url="index.html" class="accueil-page">HOMEPAGE</a></li>
+                <li><a href="#" data-url="homepage.html" class="accueil-page" id="accueil-positif">HOMEPAGE</a></li>
             </ul>
         </nav>
         <div class="language-selector">
             <label for="lang">🌍</label>
             <select id="lang" class="language-dropdown" onchange="changeLanguage()">
-                <option value="positive.html">Français</option>
                 <option value="good.html">Anglais</option>
+                <option value="positive.html">Français</option>
                 <option value="ポジティブ.html">Japonais</option>
             </select>
         </div>
     </header>
     <main>
-        <div class="container1">
-            <h2>🔵 Positive Tone</h2>
-
-            <h3>Action</h3>
+        <div>
+            <h2 class="title-positif">Positive Tone</h2>
+            <h3 class="action-title-positif">🔵 Action</h3>
             <div id="container-list-good-action"></div>
-
-            <h3>Status</h3>
+            <h3 class="etat-title-positif">🔵 Status</h3>
             <div id="container-list-good-statut"></div>
         </div>
     </main>

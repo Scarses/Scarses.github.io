@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Répertoire</title>
+    <title>中立的な意味合い</title>
     <link rel="stylesheet" href="./css/repertory.css">
 </head>
 
@@ -12,28 +12,26 @@
 
     <header class="top-bar">
         <img src="./picture/logo-transparent2.png" alt="Logo" class="logo">
-        <nav class="nav-menu">
+        <nav class="nav-menu" id="nav-menu-neutre">
             <ul>
-                <li><a href="#" data-url="ホームページ.html" class="accueil-page">ホームページ</a></li>
+                <li><a href="#" data-url="ホームページ.html" class="accueil-page" id="accueil-neutre">ホームページ</a></li>
             </ul>
         </nav>
         <div class="language-selector">
             <label for="lang">🌍</label>
             <select id="lang" class="language-dropdown" onchange="changeLanguage()">
+                <option value="ニュートラル.html">Japonais</option>
                 <option value="neutre.html">Français</option>
                 <option value="neutral.html">Anglais</option>
-                <option value="ニュートラル.html">Japonais</option>
             </select>
         </div>
     </header>
     <main>
-        <div class="container2">
-            <h2>⚪ 中立的な意味合い</h2>
-
-            <h3>行動</h3>
+        <div>
+            <h2 class="title-neutre">中立的な意味合い</h2>
+            <h3 class="action-title-neutre">⚪ 行動</h3>
             <div id="container-list-neutral-action"></div>
-
-            <h3>状態</h3>
+            <h3 class="etat-title-neutre">⚪ 状態</h3>
             <div id="container-list-neutral-statut"></div>
         </div>
     </main>

@@ -18,13 +18,14 @@ header {
 li {
     list-style: none;
 }
-/* -- Logo -- */
+
+/* --- Logo --- */
 .logo {
     top: 300px;
     width: 500px;
 }
 
-/* -- Search Bar -- */
+/* --- Search Bar --- */
 .search-container {
     display: flex;
     align-items: center;
@@ -62,7 +63,7 @@ li {
     height: 80px;
 }
 
-/* -- Center main -- */
+/* --- Center main --- */
 main {
     display: grid;
     grid-template-columns: 1fr;

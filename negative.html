@@ -4,17 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Répertoire</title>
+    <title>Tonalité Négative</title>
     <link rel="stylesheet" href="./css/repertory.css">
 </head>
 
 <body>
 
-    <header class="top-bar">
+    <header>
         <img src="./picture/logo-transparent2.png" alt="Logo" class="logo">
-        <nav class="nav-menu">
+        <nav class="nav-menu" id="nav-menu-negatif">
             <ul>
-                <li><a href="#" data-url="index.html" class="accueil-page">ACCUEIL</a></li>
+                <li><a href="#" data-url="index.html" class="accueil-page" id="accueil-negatif">ACCUEIL</a></li>
             </ul>
         </nav>
         <div class="language-selector">
@@ -22,18 +22,16 @@
             <select id="lang" class="language-dropdown" onchange="changeLanguage()">
                 <option value="negative.html">Français</option>
                 <option value="bad.html">Anglais</option>
-                <option value="レパートリー.html">Japonais</option>
+                <option value="ネガティブ.html">Japonais</option>
             </select>
         </div>
     </header>
     <main>
-        <div class="container3">
-            <h2>🔴 Tonalité Négative</h2>
-
-            <h3>Action</h3>
+        <div>
+            <h2 class="title-negatif">Tonalité Négative</h2>
+            <h3 class="action-title-negatif">🔴 Action</h3>
             <div id="container-list-negative-action"></div>
-
-            <h3>Etat</h3>
+            <h3 class="etat-title-negatif">🔴 Etat</h3>
             <div id="container-list-negative-statut"></div>
         </div>
     </main>
