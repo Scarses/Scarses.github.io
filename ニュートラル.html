@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Repertory</title>
+    <title>Répertoire</title>
     <link rel="stylesheet" href="./css/repertory.css">
 </head>
 
@@ -14,30 +14,27 @@
         <img src="./picture/logo-transparent2.png" alt="Logo" class="logo">
         <nav class="nav-menu">
             <ul>
-                <li><a href="#" data-url="homepage.html" class="accueil-page">HOMEPAGE</a></li>
+                <li><a href="#" data-url="index.html" class="accueil-page">ACCUEIL</a></li>
             </ul>
         </nav>
         <div class="language-selector">
             <label for="lang">🌍</label>
             <select id="lang" class="language-dropdown" onchange="changeLanguage()">
-                <option value="repertory.html">English</option>
-                <option value="repertoire.html">French</option>
-                <option value="レパートリー.html">Japanese</option>
+                <option value="neutre.html">Français</option>
+                <option value="neutral.html">Anglais</option>
+                <option value="ニュートラル.html">Japonais</option>
             </select>
         </div>
     </header>
     <main>
-        <div class="container1">
-            <h2>1. Positive Connotation</h2>
-            <div id="container1-list"></div>
-        </div>
         <div class="container2">
-            <h2>2. Neutral Connotation</h2>
-            <div id="container2-list"></div>
-        </div>
-        <div class="container3">
-            <h2>3. Negative Connotation</h2>
-            <div id="container3-list"></div>
+            <h2>-- 中立的な意味合い</h2>
+
+            <h3>行動</h3>
+            <div id="container-list-neutral-action"></div>
+
+            <h3>状態</h3>
+            <div id="container-list-neutral-statut"></div>
         </div>
     </main>
 

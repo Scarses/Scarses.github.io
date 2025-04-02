@@ -1,6 +1,6 @@
 // Handle click
 document.addEventListener('click', (event) => {
-    const container = event.target.closest('.paragraph-container-find-word');
+    const container = event.target.closest('.paragraph-container-positive');
     if (container) {
         const url = container.getAttribute('data-url');
         window.location.href = url;
@@ -8,7 +8,15 @@ document.addEventListener('click', (event) => {
 });
 
 document.addEventListener('click', (event) => {
-    const container = event.target.closest('.paragraph-container-for-more');
+    const container = event.target.closest('.paragraph-container-neutral');
+    if (container) {
+        const url = container.getAttribute('data-url');
+        window.location.href = url;
+    }
+});
+
+document.addEventListener('click', (event) => {
+    const container = event.target.closest('.paragraph-container-negative');
     if (container) {
         const url = container.getAttribute('data-url');
         window.location.href = url;
@@ -16,7 +24,7 @@ document.addEventListener('click', (event) => {
 });
 
 // Handle search
-const files = ["list1.html", "list2.html", "list3.html"];
+const files = ["good_action.html", "good_statut.html", "neutral_action.html", "neutral_statut.html", "negative_action.html", "negative_statut.html"];
 
 async function search() {
     let query = document.getElementById('search-bar').value.toLowerCase();
@@ -44,7 +52,7 @@ async function search() {
     if (allResults.length > 0 && allResults.length < 2) {
         allResults.forEach(result => {
             let li = document.createElement("li");
-            li.innerHTML = `${result.text}`;
+            li.innerHTML = `-> ${result.text}`;
             resultList.appendChild(li); 
         });
     } else {

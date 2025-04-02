@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="jp">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>レパートリー</title>
+    <title>Répertoire</title>
     <link rel="stylesheet" href="./css/repertory.css">
 </head>
 
@@ -14,30 +14,27 @@
         <img src="./picture/logo-transparent2.png" alt="Logo" class="logo">
         <nav class="nav-menu">
             <ul>
-                <li><a href="#" data-url="ホームページ.html" class="accueil-page">ホームページ</a></li>
+                <li><a href="#" data-url="index.html" class="accueil-page">ACCUEIL</a></li>
             </ul>
         </nav>
         <div class="language-selector">
             <label for="lang">🌍</label>
             <select id="lang" class="language-dropdown" onchange="changeLanguage()">
-                <option value="レパートリー.html">日本語</option>
-                <option value="repertory.html">英語</option>
-                <option value="repertoire.html">フランス語</option>
+                <option value="negative.html">Français</option>
+                <option value="bad.html">Anglais</option>
+                <option value="レパートリー.html">Japonais</option>
             </select>
         </div>
     </header>
     <main>
-        <div class="container1">
-            <h2>1. 肯定的な意味合い</h2>
-            <div id="container1-list"></div>
-        </div>
-        <div class="container2">
-            <h2>2. 中立的な意味合い</h2>
-            <div id="container2-list"></div>
-        </div>
         <div class="container3">
-            <h2>3. 否定的な意味合い</h2>
-            <div id="container3-list"></div>
+            <h2>-- Tonalité Négative</h2>
+
+            <h3>Action</h3>
+            <div id="container-list-negative-action"></div>
+
+            <h3>Etat</h3>
+            <div id="container-list-negative-statut"></div>
         </div>
     </main>
 

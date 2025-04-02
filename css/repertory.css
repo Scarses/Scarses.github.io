@@ -82,3 +82,12 @@
 }
 
 /* -- Words -- */
+main {
+    position: relative;
+    text-align: center;
+
+}
+
+li {
+    list-style: none;
+}
