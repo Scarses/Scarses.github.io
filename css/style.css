@@ -21,6 +21,7 @@ li {
 /* -- Logo -- */
 .logo {
     top: 300px;
+    width: 500px;
 }
 
 /* -- Search Bar -- */
@@ -38,7 +39,7 @@ li {
     border: none;
     outline: none;
     padding: 10px;
-    width: 395px;
+    width: 420px;
     border-radius: 25px;
 }
 
@@ -46,7 +47,7 @@ li {
     border: none;
     background: none;
     cursor: pointer;
-    padding: 10px;
+    padding: 12px;
     font-size: 18px;
 }
 
@@ -79,7 +80,7 @@ main {
     background: #f9f9f9;
     border-radius: 8px;
     border-left: 5px solid #884d11;
-    max-width: 400px;
+    max-width: 450px;
     margin: 10px auto;
     margin-left: 20px;
     padding: 15px;
@@ -105,4 +106,16 @@ main {
 
 .paragraph-container-negative {
     margin-bottom: 100px;
+}
+
+.paragraph-container-positive,
+.paragraph-container-neutral,
+.paragraph-container-negative {
+    position: relative;
+    left: 117px;
+    width: 400px;
+    border-radius: 25px;
+    border-right: 5px solid #884d11;
+    text-align: center;
+    font-size: 20px;
 }

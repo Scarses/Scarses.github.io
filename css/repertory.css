@@ -1,32 +1,14 @@
 @import url("../css/navigation.css");
 
-/* -- Search Bar -- */
-.search-container {
-    position: fixe;
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Centre le menu */
-    padding: 10px 15px;
-    background: white;
-    border-radius: 25px;
-    margin-top: 30px;
-    margin-left: 800px;
-    width: 20%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+main {
+    position: absolute;
+    max-width: 1200px;
+    left: 150px;
+    font-size: 30px;
 }
 
-.search-bar {
-    border: none;
-    outline: none;
-    width: 300px;
-    border-radius: 25px;
-}
-
-.search-button {
-    border: none;
-    background: none;
-    cursor: pointer;
-    font-size: 18px;
+li {
+    list-style: none;
 }
 
 /* -- Top Bar -- */
@@ -43,6 +25,8 @@
 
 /* Style du logo */
 .logo {
+    position: relative;
+    left: 200px;
     height: 120px; /* Taille du logo */
 }
 
@@ -79,15 +63,4 @@
 .nav-menu a:hover {
     background-color: #a85d14;
     border-radius: 5px;
-}
-
-/* -- Words -- */
-main {
-    position: relative;
-    text-align: center;
-
-}
-
-li {
-    list-style: none;
 }
