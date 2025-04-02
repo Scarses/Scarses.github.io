@@ -24,7 +24,7 @@ document.addEventListener('click', (event) => {
 });
 
 // Handle search
-const files = ["good_action.html", "good_statut.html", "neutral_action.html", "neutral_statut.html", "negative_action.html", "negative_statut.html"];
+const files = ["../html/good_action.html", "../html/good_statut.html", "../html/neutral_action.html", "../html/neutral_statut.html", "../html/negative_action.html", "../html/negative_statut.html"];
 
 async function search() {
     let query = document.getElementById('search-bar').value.toLowerCase();
@@ -52,8 +52,20 @@ async function search() {
     if (allResults.length > 0 && allResults.length < 2) {
         allResults.forEach(result => {
             let li = document.createElement("li");
-            li.innerHTML = `-> ${result.text}`;
-            resultList.appendChild(li); 
+            li.innerHTML = `${result.text}`;
+            const content = li.textContent;
+            const checkpoint = content.split("→").map(part => part.trim());
+            if (checkpoint.length === 3) {
+                const french = document.createElement("li");
+                french.textContent = checkpoint[0];
+                const english = document.createElement("li");
+                english.textContent = checkpoint[1];
+                const japanese = document.createElement("li");
+                japanese.textContent = checkpoint[2];
+                resultList.appendChild(french);
+                resultList.insertBefore(english, french.nextSibling);
+                resultList.insertBefore(japanese, english.nextSibling);
+            }
         });
     } else {
         const currentLang = document.documentElement.lang;

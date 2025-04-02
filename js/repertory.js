@@ -58,6 +58,7 @@ fetch('../html/negative_statut.html')
         attachSearchFunctionality();
 });
 
+// Handle langages
 async function changeLanguage() {
     var lang = document.getElementById("lang").value;
     window.location.href = lang;
